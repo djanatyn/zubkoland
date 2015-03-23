@@ -9,3 +9,7 @@
 
 - name: install .zshrc
   copy: src=zshrc dest=/home/djanatyn/.zshrc
+
+# mail stuff
+- name: install .mailfilter
+  copy: src=mailfilter dest=/home/djanatyn/.mailfilter

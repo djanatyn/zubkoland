@@ -1,0 +1,6 @@
+DEFAULT="$HOME/mail/"
+INBOX="$DEFAULT/Inbox"
+
+logfile "$HOME/.maildrop.log"
+
+to $INBOX
