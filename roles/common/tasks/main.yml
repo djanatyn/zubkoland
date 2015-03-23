@@ -1,0 +1,15 @@
+---
+# this role is for plays on all hosts i own
+# these tasks are excecuted on all hosts!
+
+# this is some basic stuff I need to live
+- name: install basic sysadmin stuff
+  yum: name={{ item }} state=present
+  with_items:
+    - weechat
+    - zsh
+
+- name: install gems for development
+  gem: name={{ item }} state=present
+  with_items:
+    - pry

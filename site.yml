@@ -1,0 +1,12 @@
+---
+# all hosts inherit the common role
+- hosts: all
+  gather_facts: no
+  roles:
+  - common
+
+# these are things that only run on zubkoland.org
+- hosts: localhost
+  gather_facts: no
+  roles:
+  - dotfiles
