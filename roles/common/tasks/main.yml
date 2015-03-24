@@ -1,5 +1,4 @@
 ---
-# this role is for plays on all hosts i own
 # these tasks are excecuted on all hosts!
 
 # these packages get installed everywhere
