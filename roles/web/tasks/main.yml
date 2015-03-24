@@ -1,0 +1,11 @@
+---
+# this role manages web stuff
+- name: install apache httpd
+  yum: name=httpd state=present
+
+- name: ensure httpd is running
+  service: name=httpd state=started
+
+- name: manage /var/www/html/ files
+  copy: src=web_dir/ dest=/var/www/html/
+
