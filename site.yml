@@ -16,3 +16,4 @@
   - { role: web }
   - { role: mail }
   - { role: mivok0.users, users_default_shell: /bin/zsh }
+  - { role: scripts }

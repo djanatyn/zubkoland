@@ -1,0 +1,9 @@
+---
+# this role copies nifty scripts
+
+# page me when long-running scripts finish
+- name: notify when finished
+  copy: src=nwf.rb dest=/usr/local/bin/nwf mode=0755 owner=root
+# install gems
+- gem: name=typhoeus state=present
+- gem: name=trollop state=present
