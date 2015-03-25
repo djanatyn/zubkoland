@@ -13,3 +13,4 @@
   - { role: dotfiles, user: djanatyn }
   - { role: web, sudo: yes }
   - { role: mail, sudo: yes }
+  - { role: mivok0.users, users_default_shell: /bin/zsh }
