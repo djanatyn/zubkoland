@@ -13,4 +13,3 @@
   copy: src=djanatyn/mailfilter dest=/home/djanatyn/.mailfilter
         force=no mode=0644 owner=djanatyn
 
-
