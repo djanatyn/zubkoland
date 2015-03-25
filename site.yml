@@ -4,12 +4,11 @@
   gather_facts: no
   roles:
   - common
-  - ansible
+  - { role: ansible, sudo: yes }
 
 # these are things that only run on zubkoland.org
 - hosts: localhost
   gather_facts: no
-  sudo: yes
   roles:
-  - dotfiles
-  - web
+  - { role: dotfiles, user: djanatyn }
+  - { role: web, sudo: yes }

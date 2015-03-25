@@ -2,14 +2,14 @@
 # this role adds my basic dotfiles
 
 - name: install .vimrc
-  copy: src=vimrc dest=/home/djanatyn/.vimrc
+  copy: src=vimrc dest=/home/{{ user }}/.vimrc
 
 - name: install .tmux.conf
-  copy: src=tmux.conf dest=/home/djanatyn/.tmux.conf
+  copy: src=tmux.conf dest=/home/{{ user }}/.tmux.conf
 
 - name: install .zshrc
-  copy: src=zshrc dest=/home/djanatyn/.zshrc
+  copy: src=zshrc dest=/home/{{ user }}/.zshrc
 
 # mail stuff
 - name: install .mailfilter
-  copy: src=mailfilter dest=/home/djanatyn/.mailfilter
+  copy: src=mailfilter dest=/home/{{ user }}/.mailfilter
