@@ -1,5 +1,5 @@
 ---
-# this role manages web stuff
+# this role manages apache
 - name: install apache httpd
   yum: name=httpd state=present
 
@@ -9,3 +9,6 @@
 - name: manage /var/www/html/ files
   copy: src=web_dir/ dest=/var/www/html/
 
+- name: enable mod_userdir for users
+  file: src=userdir.conf dest=/etc/httpd/conf.d/userdir.conf
+        owner=root mode=0644
