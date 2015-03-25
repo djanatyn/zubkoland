@@ -65,24 +65,7 @@ export MANPATH="/usr/local/man:$MANPATH"
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
-
 export LD_LIBRARY_PATH="/usr/local/lib:$LD_LIBRARY_PATH"
-
-alias r='rsync -avzP'
-alias s='cd ..'
-alias a='ack -ai'
-
-set HIST_IGNORE_SPACE
-
-# for vi-mode responsiveness
-export KEYTIMEOUT=1
-bindkey \\C-R history-incremental-search-backward
-bindkey '^P' up-history
-bindkey '^N' down-history
-bindkey '^h' backward-delete-char
-bindkey '^w' backward-kill-word
 
 # just in case
 export TZ='America/Los_Angeles'

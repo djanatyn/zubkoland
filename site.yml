@@ -8,9 +8,11 @@
 
 # these are things that only run on zubkoland.org
 - hosts: localhost
+  connection: local # we need this for fast file io
   gather_facts: no
+  sudo: yes
   roles:
-  - { role: dotfiles, user: djanatyn }
-  - { role: web, sudo: yes }
-  - { role: mail, sudo: yes }
+  - { role: dotfiles}
+  - { role: web }
+  - { role: mail }
   - { role: mivok0.users, users_default_shell: /bin/zsh }

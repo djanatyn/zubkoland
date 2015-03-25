@@ -1,15 +1,16 @@
 ---
-# this role adds my basic dotfiles
+# this role manages user dotfiles
 
-- name: install .vimrc
-  copy: src=vimrc dest=/home/{{ user }}/.vimrc
+- name: install djanatyn's config files
+  copy: src=djanatyn/tmux.conf dest=/home/djanatyn/.tmux.conf
+        force=no mode=0644 owner=djanatyn
+  copy: src=djanatyn/vimrc dest=/home/djanatyn/.vimrc
+        force=no mode=0644 owner=djanatyn
+  copy: src=djanatyn/zshrc dest=/home/djanatyn/.zshrc
+        force=no mode=0644 owner=djanatyn
+  copy: src=djanatyn/oh-my-zsh dest=/home/djanatyn/.oh-my-zsh
+        force=no mode=0755 owner=djanatyn
+  copy: src=djanatyn/mailfilter dest=/home/djanatyn/.mailfilter
+        force=no mode=0644 owner=djanatyn
 
-- name: install .tmux.conf
-  copy: src=tmux.conf dest=/home/{{ user }}/.tmux.conf
 
-- name: install .zshrc
-  copy: src=zshrc dest=/home/{{ user }}/.zshrc
-
-# mail stuff
-- name: install .mailfilter
-  copy: src=mailfilter dest=/home/{{ user }}/.mailfilter
