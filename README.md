@@ -7,3 +7,4 @@ configuration are applied with /usr/local/bin/update_zubkoland
 things currently managed include:
 - postfix
 - apache
+- users (with mivok0.users)
