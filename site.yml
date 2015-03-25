@@ -12,3 +12,4 @@
   roles:
   - { role: dotfiles, user: djanatyn }
   - { role: web, sudo: yes }
+  - { role: mail, sudo: yes }
