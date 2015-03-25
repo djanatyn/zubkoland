@@ -7,3 +7,9 @@ users:
   groups: ['wheel','systemd-journal']
   ssh_key:
   - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDI42aT6tY+d+NAxDFDHDWpIS9VLwbe8QGYLPZ+91BPSwjK4PPn7ffco752hUlIPCZhHybE7nOQ6vG0IAMrliWkzu1wazfsauOSEzjCcQOqP0AwH6rO1qc9vGmH8/AO979wig6RMObwVO/MZYufpSxg7Tur7eXIhdL4Rih2wW3GuUDUW7oo5r2eQQPkUVH0y0ERz0B7RsWz7OFZHFipI5xL/QV5gSGUhOFG3a9NqpL5QvKo1GPZnIJeFQ69sz86wh9IxXM0yyN2Govcx062+IHDIIa1XRXLSWDjENBdsaTlk3bmzObCa9LcjsGihkZMN8yF1chWRFDnac9HbYbJSy1d brightcloud@clearskies"
+- username: lindar
+  name: Lindar Kelleigh Greenwood
+  uid: 1004
+  groups: ['wheel','systemd-journal']
+  ssh_key:
+  - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDHFuwz/iK6cBEpbseID9NERPsprPmJo7KeUEpoEnadvkzKK/Ur4T2jfhBNJY6QJTDK8f/RWJAPTu2sO4qynhCvhAseKv1bJz9V4z+z90hKyDQudQuOXkwgyhB4dVTfuShsiIStsCQCRoyNoCKkpOZ8SM4F6z5i/DEX5L8IuhJJdkHn4wvzClL9QN6R4LjPcMCX7QjdIK2lyj/grk1xqk47S/oqsuJ3viEgaOX+pbP9yAbv/Kw+Duh5LRrVgUoRPwUnFq1hiQd8GrrozKVTgQhE48DcHRf2gKkqqmuvODKcuB9vw3ghztPRjFiC1hD4D0zm19haHEvwBv1S+PgpKbtZ lindar@bucket"
