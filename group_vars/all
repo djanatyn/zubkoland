@@ -25,3 +25,10 @@ users:
   groups: ['wheel','systemd-journal']
   ssh_key:
   - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDrfQpi7K9JCO06GvxRZhfYqqYOp/akBccL/i8v5Su1TqSCDzRnb5yHxiZyVvkkNgBFXwz6SLO7B11UHJzqX8Wm5fWU1G0hy8ZReTdgEJWc2phUttnvkCAgAeF1kzk3Z3H6cPa9yRmCM7YlcmWFOuyzRAGZCM7JCiX9q3yeZX2rAANnTFYoPhjD0oejo1CHhbYIkPF0+kW3OW9dqr1YGCyfJVpVe//+ETeyjwYp6nIpdeJuS4qZfl5WQGK1C6tzfe2aFE0Ra/Mg4mZb7x4TgXPt/Xe6aRBh1sro7BzYx7lG9ixiGgSJzAs+Yo8YzK/jMl6G8YqE47zI/oZ2H6n0L6GB tswett@mittens"
+- username: brendan
+  name: Bren Szewczyk
+  uid: 1007
+  groups: ['wheel','systemd-journal']
+  ssh_key:
+  - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDWL/bdGOlaK39zHjPwyyZB7Ss4EI+iHlaudBovxfFA+qogzkYOsvN9/qQrhYPwlHQnx/9bFmswW/Djh6KZvRxRPROPwXFBpu858D+8Tbu4iQ7EbhVcmgN3a33bu1oBfey+3GfszCQpdhNcteCtr/qyINBn9GtkF4mIH3s4WLrBX4yjqL6iCXiAxIq6/JrezNkTl5w8g4FxBpJZlqVgzo7AGHM3QQNOsEABzRgUT41oFlUgWJhQvlvTIwB/j/fNhB1oqAq8Ran80HFOshc6NlptOYZlEdq4Cn7a2BjgaWtb8g4SWf7k1w4IWwuLr9Bcj2MFhRdyoglOqFsirPl3YHUz bren@localhost"
+
