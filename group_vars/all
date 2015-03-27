@@ -31,4 +31,9 @@ users:
   groups: ['wheel','systemd-journal']
   ssh_key:
   - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDWL/bdGOlaK39zHjPwyyZB7Ss4EI+iHlaudBovxfFA+qogzkYOsvN9/qQrhYPwlHQnx/9bFmswW/Djh6KZvRxRPROPwXFBpu858D+8Tbu4iQ7EbhVcmgN3a33bu1oBfey+3GfszCQpdhNcteCtr/qyINBn9GtkF4mIH3s4WLrBX4yjqL6iCXiAxIq6/JrezNkTl5w8g4FxBpJZlqVgzo7AGHM3QQNOsEABzRgUT41oFlUgWJhQvlvTIwB/j/fNhB1oqAq8Ran80HFOshc6NlptOYZlEdq4Cn7a2BjgaWtb8g4SWf7k1w4IWwuLr9Bcj2MFhRdyoglOqFsirPl3YHUz bren@localhost"
-
+- username: asvnpr
+  name: Alejandro Salvador Vega-Nogales
+  uid: 1008
+  groups: ['wheel','systemd-journal']
+  ssh_key:
+  - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDM8Edu7IidfaudTEdFX3lBi69nfZ8b1klQOzkUxM+U6e88FUeZcDgITgm6lcUL2EbbEzYKKH+AtxjCxRW6vZe7KyOyqoYsJTPxTM2NfcThQa21pk3wb4242cAN7bnmipIRsmfPgtPLxWF+xlc1Z/SRHguQcgZY/RJJUU+tkVlUCvKl7wNE68/zl1X237fzrMTM3wwKi4HYoeNHnK/HITYWSTdVyCAG+Hb1G3QFUOaprTjsJV3Ue8qDDf/k4rF40dWPZ3Wv+DEfB7robHOFxma6kZB/Y/xu1yR/JPKpxkPn+zq6MuY7Tw6ji9Fxp3ZnFMM25Cv5Ou0UaDsW6BMpXDbH asvnpr@redhood"
