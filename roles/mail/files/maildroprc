@@ -1,3 +1,3 @@
 logfile "$HOME/.maildrop.log"
 
-to /home/$USER/mail/
+to /home/$USER/Mail/
