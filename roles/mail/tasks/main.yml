@@ -2,4 +2,17 @@
 # this playbook manages mail on zubkoland.org
 
 - name: update postifx configuration file
-  file: path=/etc/postfix/main.cf src=postfix_main.cf mode=0644
+  file: path=/etc/postfix/main.cf src=postfix_main.cf
+        mode=0644 owner=root
+
+- name: update maildrop configuration
+  file: path=/etc/maildroprc src=maildroprc
+        mode=0644 owner=root
+
+- name: create maildirectories script
+  copy: src=make_maildirs.rb dest=/usr/bin/make_maildirs
+        mode=0755 owner=root
+
+- command: /usr/bin/make_maildirs {{ item.username }}
+  sudo: yes
+  with_items: users

@@ -1,0 +1,4 @@
+logfile "$HOME/.maildrop.log"
+
+to /var/spool/mail/$USER
+
