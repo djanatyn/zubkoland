@@ -37,3 +37,9 @@ users:
   groups: ['wheel','systemd-journal']
   ssh_key:
   - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDM8Edu7IidfaudTEdFX3lBi69nfZ8b1klQOzkUxM+U6e88FUeZcDgITgm6lcUL2EbbEzYKKH+AtxjCxRW6vZe7KyOyqoYsJTPxTM2NfcThQa21pk3wb4242cAN7bnmipIRsmfPgtPLxWF+xlc1Z/SRHguQcgZY/RJJUU+tkVlUCvKl7wNE68/zl1X237fzrMTM3wwKi4HYoeNHnK/HITYWSTdVyCAG+Hb1G3QFUOaprTjsJV3Ue8qDDf/k4rF40dWPZ3Wv+DEfB7robHOFxma6kZB/Y/xu1yR/JPKpxkPn+zq6MuY7Tw6ji9Fxp3ZnFMM25Cv5Ou0UaDsW6BMpXDbH asvnpr@redhood"
+- username: shenty
+  name: Shantanu Vyas
+  uid: 1009
+  groups: ['wheel','systemd-journal']
+  ssh_key:
+  - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCreUXUaPcDHsxGsn60iZHNvzyFXLroxtem7/a35oQnsn4Rv48o0zn54Xl1WUVOjKirGhBEAJZJrD6KkajADNKOsnFefsWMtQADHDzEJMbSMt1bVC19hjt3EFHKdES0f++eIPUStoQjfaJcoEmshlrQZ8KFBhYu8YRQj6XByX7PnUBssk5h7OJRM2K48wC2464HKXZIwggwSlWcvIzX0U9B4+H+rVuUXoXwwzr2vuPc+KTwLZf6RTYvfrsNErshYzNpvJ+Q6oJW8wwdON9fc12DAGbrZCxcWetrSBlvJl6/uaj/VY38pHjPDdNcwWBdw+Esh/t3qPjAPc1sAGhXFKlP shenty@shant-station"
