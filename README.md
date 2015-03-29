@@ -8,3 +8,6 @@ things currently managed include:
 - postfix
 - apache
 - users (with mivok0.users)
+
+todo:
+- add ngircd config, with encrpytion
