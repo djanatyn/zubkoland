@@ -1,0 +1,8 @@
+---
+# tasks for users managed at zubkoland.org
+
+- name: run user directory creation script for each user
+  script: make_userdirs.rb {{ item.username }}
+  with_items: users
+  tags: 
+  - users
