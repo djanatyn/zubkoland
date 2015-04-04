@@ -1,0 +1,7 @@
+---
+# this role manages nagios monitoring
+- name: ensure nagios is installed
+  yum: name=nagios state=present
+
+- name: ensure nagios is running
+  service: name=nagios state=started

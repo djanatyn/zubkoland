@@ -1,6 +1,5 @@
 ---
 # this playbook manages mail on zubkoland.org
-
 - name: update postifx configuration file
   file: path=/etc/postfix/main.cf src=postfix_main.cf
         mode=0644 owner=root
