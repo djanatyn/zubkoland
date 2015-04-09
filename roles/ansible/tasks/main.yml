@@ -6,8 +6,4 @@
 # whenever new changes are added; /usr/local/bin/update_zubkoland runs the
 # playbook after updating the repository.
 
-- name: update local ansible config repository
-  git: repo=https://github.com/djanatyn/zubkoland.git dest=/var/local/zubkoland/
-       update=yes
-
 - copy: src=update_zubkoland.sh dest=/usr/local/bin/update_zubkoland mode=0755
