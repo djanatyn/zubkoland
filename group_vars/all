@@ -43,3 +43,9 @@ users:
   groups: ['wheel','systemd-journal']
   ssh_key:
   - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCreUXUaPcDHsxGsn60iZHNvzyFXLroxtem7/a35oQnsn4Rv48o0zn54Xl1WUVOjKirGhBEAJZJrD6KkajADNKOsnFefsWMtQADHDzEJMbSMt1bVC19hjt3EFHKdES0f++eIPUStoQjfaJcoEmshlrQZ8KFBhYu8YRQj6XByX7PnUBssk5h7OJRM2K48wC2464HKXZIwggwSlWcvIzX0U9B4+H+rVuUXoXwwzr2vuPc+KTwLZf6RTYvfrsNErshYzNpvJ+Q6oJW8wwdON9fc12DAGbrZCxcWetrSBlvJl6/uaj/VY38pHjPDdNcwWBdw+Esh/t3qPjAPc1sAGhXFKlP shenty@shant-station"
+- username: deploy
+  name: Deploy Test Account
+  uid: 1011
+  groups: ['wheel, 'systemd-journal']
+  ssh_key:
+  - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCyb5F1KSFIIPwy8P6Tr81pwM5YM3EYW5EmOeNz8o1sVcRTUz74YTOdJtg/ZfycBYNsC/DHNx0BOXkiaYVUyALdUD3qPper04k8MkGqqwfIASTtr9FqGLmAY6S8swBAKtwDFCVnIsNjqPdnFPbTB+STCAS7+wduHdq/UzGhvUgMmEES1IIrmwKQI7MjIpHD7hnew6nEVrl0m/btUs+Ap/ljZujb6gtNxEWm39/X6VMmzZQsVgka6a2bCUkaQ1LwizV2rTtEN6MEuzqDhAz5WojH/gj1yCatRfeMPYlQci2d1my8NuN+B+Fbi6KyUghMvPfQfldaIX6oqssoh4oZI+4r jstrickland@gunka"
