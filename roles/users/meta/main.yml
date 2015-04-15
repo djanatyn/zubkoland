@@ -1,0 +1,3 @@
+---
+dependencies:
+- { role: mivok0.users, users_default_shell: /bin/zsh }
