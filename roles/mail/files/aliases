@@ -95,6 +95,10 @@ decode:         root
 # Person who should get root's mail
 root:           djanatyn
 
+## mailing lists
+## -------------
+## regenerate with `sudo -u mailman /usr/local/lib/mailman/bin/genaliases`
+
 ## users mailing list
 users:              "|/usr/lib/mailman/mail/mailman post users"
 users-admin:        "|/usr/lib/mailman/mail/mailman admin users"
