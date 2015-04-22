@@ -7,3 +7,7 @@
 - name: update maildrop configuration
   file: path=/etc/maildroprc src=maildroprc
         mode=0644 owner=root
+
+- name: update aliases for mailing list
+  file: path=/etc/aliases src=aliases
+        mode=0644 owner=root
