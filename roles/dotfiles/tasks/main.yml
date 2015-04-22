@@ -10,4 +10,4 @@
   copy: src=djanatyn/oh-my-zsh dest=/home/djanatyn/.oh-my-zsh
         force=no mode=0755 owner=djanatyn
   copy: src=djanatyn/mailfilter dest=/home/djanatyn/.mailfilter
-        force=no mode=0644 owner=djanatyn
+        force=yes mode=0644 owner=djanatyn
