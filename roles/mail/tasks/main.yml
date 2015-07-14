@@ -9,5 +9,5 @@
         mode=0644 owner=root force=yes
 
 - name: update aliases for mailing list
-  copy: path=/etc/aliases src=aliases
+  copy: dest=/etc/aliases src=aliases
         mode=0644 owner=root force=no
