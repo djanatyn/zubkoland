@@ -13,7 +13,7 @@ mail_directory = "/home/#{user}/Mail/"
 
 unless File.exists? mail_directory
   %x{/usr/bin/maildirmake #{mail_directory}}
-  File.chown user, user, dir
+  File.chown user, user, mail_directory
 end
 
 # make regular directories here
