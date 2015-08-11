@@ -1,7 +1,11 @@
 ---
 # this role manages nagios monitoring
-- name: ensure nagios is installed
+- name: install nagios
   yum: name=nagios state=present
 
-- name: ensure nagios is running
+- name: start nagios
   service: name=nagios state=started
+
+# nagios checks
+- name: redmine status check
+  copy: src=checks/check_redmine.rb dest=/usr/local/bin/check_redmine
