@@ -8,5 +8,5 @@
 
 # nagios checks
 - name: redmine status check
-  copy: src=checks/check_redmine.rb dest=/usr/local/bin/check_redmine
+  copy: src=checks/check_redmine.rb dest=/usr/lib64/nagios/plugins/check_redmine
         mode=0755 owner=root
