@@ -19,3 +19,4 @@
   - { role: scripts }
   - { role: users }
   - { role: redmine }
+  - { role: nagios }
