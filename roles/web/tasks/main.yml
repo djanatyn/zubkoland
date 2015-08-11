@@ -32,7 +32,7 @@
 # shellinabox
 # -----------
 - name: install shellinabox
-  yum: name=shellinabox ensure=present
+  yum: name=shellinabox state=present
 
 - name: shellinabox config file
   file: src=shellinabox/shellinaboxd dest=/etc/sysconfig/shellinaboxd
