@@ -1,8 +1,0 @@
----
-# this role manages shellinabox
-- name: install shellinabox
-  yum: name=shellinabox ensure=present
-
-- name: update config files for shellinabox
-  file: src=shellinaboxd dest=/etc/sysconfig/shellinaboxd
-        owner=root mode=0644

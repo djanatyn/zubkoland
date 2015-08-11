@@ -1,5 +1,21 @@
 ---
-# this role manages apache
+# this role manages web stuff
+#
+# we have haproxy listening at port 80
+
+# haproxy
+# -------
+- name: install haproxy
+  yum: name=haproxy state=present
+
+- name: ensure haproxy is running
+  service: name=haproxy state=started
+
+- name: main haproxy config file
+  copy: src=haproxy.cfg dest=/etc/haproxy/haproxy.cfg
+
+# httpd
+# -----
 - name: install apache httpd
   yum: name=httpd state=present
 
@@ -7,8 +23,25 @@
   service: name=httpd state=started
 
 - name: manage /var/www/html/ files
-  copy: src=web_dir/ dest=/var/www/html/
+  copy: src=httpd/web_dir/ dest=/var/www/html/
 
 - name: enable mod_userdir for users
-  copy: src=userdir.conf dest=/etc/httpd/conf.d/userdir.conf
+  copy: src=httpd/userdir.conf dest=/etc/httpd/conf.d/userdir.conf
         owner=root mode=0644
+
+# shellinabox
+# -----------
+- name: install shellinabox
+  yum: name=shellinabox ensure=present
+
+- name: shellinabox config file
+  file: src=shellinabox/shellinaboxd dest=/etc/sysconfig/shellinaboxd
+        owner=root mode=0644
+
+- name: start shellinabox
+  service: name=shellinaboxd state=started
+
+# redmine
+# -------
+- name: start redmine
+  service: name=redmine state=started

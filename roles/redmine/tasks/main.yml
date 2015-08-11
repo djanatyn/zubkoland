@@ -3,8 +3,5 @@
 - name: redmine systemd unit
   copy: src=redmine.service dest=/etc/systemd/system/redmine.service
 
-- name: ensure redmine is running
-  service: name=redmine state=started
-
 - name: redmine runner script
   copy: src=redmine.sh dest=/usr/local/bin/redmine
