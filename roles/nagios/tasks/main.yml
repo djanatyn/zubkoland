@@ -10,3 +10,6 @@
 - name: redmine status check
   copy: src=checks/check_redmine.rb dest=/usr/lib64/nagios/libexec/check_redmine
         mode=0755 owner=root
+- name: denyhosts status check
+  copy: src=checks/check_denyhosts.rb dest=/usr/lib64/nagios/libexec/check_denyhosts
+        mode=0755 owner=root
