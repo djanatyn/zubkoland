@@ -1,0 +1,13 @@
+---
+# this role manages whalespeak
+
+- name: create whalespeak system user
+  user: name=whalespeak system=yes uid=1016
+
+- name: whalespeak api folder
+  file: path=/opt/whalespeak state=directory
+        mode=0755 owner=whalespeak
+
+- name: checkout whalespeak repository
+  git: repo=https://github.com/djanatyn/whalespeak.git dest=/opt/whalespeak
+

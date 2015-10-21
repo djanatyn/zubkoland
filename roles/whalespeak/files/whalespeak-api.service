@@ -1,0 +1,13 @@
+[Unit]
+Description=whalespeak rest api
+ 
+[Service]
+Type=simple
+User=whalespeak
+Group=root
+WorkingDirectory=/opt/whalespeak
+ExecStart=/usr/local/bin/whalespeak-api
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
