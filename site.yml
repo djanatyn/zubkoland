@@ -20,3 +20,4 @@
   - { role: users }
   - { role: redmine }
   - { role: nagios }
+  - { role: whalespeak }
