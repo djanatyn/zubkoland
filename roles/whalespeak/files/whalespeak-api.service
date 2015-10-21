@@ -5,7 +5,7 @@ Description=whalespeak rest api
 Type=simple
 User=whalespeak
 Group=root
-WorkingDirectory=/opt/whalespeak
+WorkingDirectory=/opt/whalespeak/web
 ExecStart=/usr/local/bin/whalespeak-api
 Restart=always
 

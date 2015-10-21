@@ -11,3 +11,9 @@
 - name: checkout whalespeak repository
   git: repo=https://github.com/djanatyn/whalespeak.git dest=/opt/whalespeak
 
+- name: whalespeak-api systemd unit
+  copy: src=whalespeak-api.service dest=/etc/systemd/system/whalespeak-api.service
+
+- name: whalespeak runner script
+  copy: src=whalespeak-api.sh dest=/usr/local/bin/whalespeak-api
+        mode=0755 owner=root
