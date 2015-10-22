@@ -13,7 +13,7 @@
   sudo: yes
   roles:
   - { role: dotfiles}
-  - { role: web tags: ['web'] }
+  - { role: web, tags: ['web'] }
   - { role: mail, tags: ['mail'] }
   - { role: mivok0.users, users_default_shell: /bin/zsh }
   - { role: scripts, tags: ['scripts'] }
