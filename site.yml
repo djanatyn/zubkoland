@@ -13,10 +13,10 @@
   sudo: yes
   roles:
   - { role: dotfiles}
-  - { role: web }
-  - { role: mail }
+  - { role: web tags: ['web'] }
+  - { role: mail, tags: ['mail'] }
   - { role: mivok0.users, users_default_shell: /bin/zsh }
-  - { role: scripts }
+  - { role: scripts, tags: ['scripts'] }
   - { role: users }
   - { role: redmine }
   - { role: nagios }
