@@ -1,0 +1,12 @@
+DEFAULT="$HOME/mail/"
+INBOX="$DEFAULT/Inbox"
+
+logfile "$HOME/.maildrop.log"
+
+# throw out DenyHosts emails
+if (/^From:.*DenyHosts/:h)
+{
+  to /dev/null
+}
+
+to $INBOX
