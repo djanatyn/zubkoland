@@ -1,0 +1,9 @@
+- hosts: localhost
+  connection: local # we need this for fast file io
+  gather_facts: no
+  sudo: yes
+  roles:
+  - { role: ansible-users, default_shell: /bin/zsh }
+  - { role: dotfiles }
+  - { role: ansible }
+  - { role: common }
