@@ -4,6 +4,6 @@
   sudo: yes
   roles:
   - { role: common }
-  - { role: ansible-users, users_default_shell: /bin/zsh }
+  - { role: ansible-users }
   - { role: ansible }
   - { role: dotfiles }
