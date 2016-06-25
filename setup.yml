@@ -3,7 +3,7 @@
   gather_facts: no
   sudo: yes
   roles:
-  - { role: ansible-users, default_shell: /bin/zsh }
-  - { role: dotfiles }
-  - { role: ansible }
   - { role: common }
+  - { role: ansible-users, users_default_shell: /bin/zsh }
+  - { role: ansible }
+  - { role: dotfiles }
