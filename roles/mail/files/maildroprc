@@ -1,3 +1,0 @@
-logfile "$HOME/.maildrop.log"
-
-to $HOME/Mail

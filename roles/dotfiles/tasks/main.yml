@@ -1,13 +1,5 @@
 ---
 # this role manages user dotfiles
 - name: install djanatyn's config files
-  copy: src=djanatyn/tmux.conf dest=/home/djanatyn/.tmux.conf
-        force=yes mode=0644 owner=djanatyn
-  copy: src=djanatyn/vimrc dest=/home/djanatyn/.vimrc
-        force=yes mode=0644 owner=djanatyn
-  copy: src=djanatyn/zshrc dest=/home/djanatyn/.zshrc
-        force=yes mode=0644 owner=djanatyn
-  copy: src=djanatyn/oh-my-zsh dest=/home/djanatyn/.oh-my-zsh
-        force=no mode=0755 owner=djanatyn
-  copy: src=djanatyn/mailfilter dest=/home/djanatyn/.mailfilter
-        force=yes mode=0644 owner=djanatyn
+  copy: src=djanatyn/ dest=/home/djanatyn/
+        force=yes owner=djanatyn

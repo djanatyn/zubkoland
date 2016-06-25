@@ -1,8 +1,0 @@
----
-# this role manages redmine
-- name: redmine systemd unit
-  copy: src=redmine.service dest=/etc/systemd/system/redmine.service
-
-- name: redmine runner script
-  copy: src=redmine.sh dest=/usr/local/bin/redmine
-        mode=0755 owner=root
