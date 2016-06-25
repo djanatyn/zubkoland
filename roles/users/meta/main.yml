@@ -1,3 +1,3 @@
 ---
 dependencies:
-- { role: mivok0.users, users_default_shell: /bin/zsh }
+- { role: ansible-users, users_default_shell: /bin/zsh }

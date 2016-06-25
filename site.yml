@@ -1,21 +1,13 @@
----
-# all hosts inherit the common role
-- hosts: all
-  gather_facts: no
-  roles:
-  - common
-  - { role: ansible, sudo: yes }
-
 # these are things that only run on zubkoland.org
 - hosts: localhost
   connection: local # we need this for fast file io
   gather_facts: no
   sudo: yes
   roles:
+  - { role: ansible-users, users_default_shell: /bin/zsh }
   - { role: dotfiles}
   - { role: web, tags: ['web'] }
   - { role: mail, tags: ['mail'] }
-  - { role: mivok0.users, users_default_shell: /bin/zsh }
   - { role: scripts, tags: ['scripts'] }
   - { role: users }
   - { role: redmine }
