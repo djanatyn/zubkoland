@@ -1,6 +1,7 @@
 # check for oh-my-zsh install.
 if [ ! -f $HOME/.oh-my-zsh ]; then
-  git clone git://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh
+  echo "installing oh my zsh..."
+  git clone git://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh &>/dev/null
 fi
 
 # Path to your oh-my-zsh configuration.
