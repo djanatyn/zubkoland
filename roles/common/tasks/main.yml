@@ -7,3 +7,4 @@
     - zsh
     - htop
     - tmux
+    - openssh-server
